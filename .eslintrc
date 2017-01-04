@@ -1,6 +1,10 @@
 {
+  "env": {
+    "browser": true
+  },
   "extends": "airbnb",
   "rules": {
-    "func-names": ["error", "never"]
+    "func-names": ["error", "never"],
+    "no-trailing-spaces": "off"
   }
 }

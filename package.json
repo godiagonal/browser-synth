@@ -1,0 +1,43 @@
+{
+  "name": "web-audio-synth",
+  "version": "0.0.1",
+  "description": "A synthesizer in your browser!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://godiagonal@github.com/godiagonal/web-audio-synth.git"
+  },
+  "keywords": [
+    "web",
+    "audio",
+    "synth"
+  ],
+  "author": "Samuel Johansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godiagonal/web-audio-synth/issues"
+  },
+  "homepage": "https://github.com/godiagonal/web-audio-synth#readme",
+  "dependencies": {
+    "octavian": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

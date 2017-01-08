@@ -1,21 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Web Audio Synth</title>
+    <title>Browser Synthesizer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="dist/bundle.css">
+    <link rel="stylesheet" href="dist/bundle.css?v=6s">
 </head>
 <body>
 
 <div class="container">
 
-    <h1>Web Audio Synth</h1>
+    <h1 class="text-center hidden-xs">Browser Synthesizer</h1>
+    <h2 class="text-center visible-xs">Browser Synthesizer</h2>
+    <h4 class="text-center text-muted">Looooooorem ipsum hallelujah!</h4>
 
-    Hello world!
+    <div class="row">
+        <div class="col-sm-12 text-center">
+
+            <div class="piano">
+                <ul>
+                    <li>
+                        <div id="key-C" class="key" data-note="C">A</div>
+                        <div id="key-CS" class="key key-upper" data-note="C#">W</div>
+                    </li>
+                    <li>
+                        <div id="key-D" class="key" data-note="D">S</div>
+                        <div id="key-DS" class="key key-upper" data-note="D#">E</div>
+                    </li>
+                    <li>
+                        <div id="key-E" class="key" data-note="E">D</div>
+                    </li>
+                    <li>
+                        <div id="key-F" class="key" data-note="F">F</div>
+                        <div id="key-FS" class="key key-upper" data-note="F#">T</div>
+                    </li>
+                    <li>
+                        <div id="key-G" class="key" data-note="G">G</div>
+                        <div id="key-GS" class="key key-upper" data-note="G#">Y</div>
+                    </li>
+                    <li>
+                        <div id="key-A" class="key" data-note="A">H</div>
+                        <div id="key-AS" class="key key-upper" data-note="A#">U</div>
+                    </li>
+                    <li>
+                        <div id="key-B" class="key" data-note="B">J</div>
+                    </li>
+                    <li class="hidden-xs">
+                        <div id="key-C1" class="key" data-note="C+1">K</div>
+                        <div id="key-CS1" class="key key-upper" data-note="C#+1">O</div>
+                    </li>
+                    <li class="hidden-xs">
+                        <div id="key-D1" class="key" data-note="D+1">L</div>
+                        <div id="key-DS1" class="key key-upper" data-note="D#+1">P</div>
+                    </li>
+                    <li class="hidden-xs">
+                        <div id="key-E1" class="key" data-note="E+1">Ö</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 text-center">
+
+            <h3 class="hidden-xs">Wave shape</h3>
+            <h4 class="visible-xs">Wave shape</h4>
+
+            <div class="btn-group-vertical">
+                <button id="waveshape-sine" type="button" class="btn btn-default waveshape" data-waveshape="sine">
+                    <strong class="hidden-xs">1</strong> Sine
+                </button>
+                <button id="waveshape-square" type="button" class="btn btn-default waveshape" data-waveshape="square">
+                    <strong class="hidden-xs">2</strong> Square
+                </button>
+                <button id="waveshape-sawtooth" type="button" class="btn btn-default waveshape" data-waveshape="sawtooth">
+                    <strong class="hidden-xs">3</strong> Sawtooth
+                </button>
+                <button id="waveshape-triangle" type="button" class="btn btn-default waveshape" data-waveshape="triangle">
+                    <strong class="hidden-xs">4</strong> Triangle
+                </button>
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center">
+
+            <h3 class="hidden-xs">Effects chain</h3>
+            <h4 class="visible-xs">Effects chain</h4>
+
+            <div class="btn-group-vertical">
+                <button id="fx-distortion" type="button" class="btn btn-default effect" data-effect="distortion">
+                    <strong class="hidden-xs">7</strong> Distortion
+                </button>
+                <button id="fx-delay" type="button" class="btn btn-default effect" data-effect="delay">
+                    <strong class="hidden-xs">8</strong> Delay
+                </button>
+                <button id="fx-reverb" type="button" class="btn btn-default effect" data-effect="reverb">
+                    <strong class="hidden-xs">9</strong> Reverb
+                </button>
+                <button id="fx-lowpass" type="button" class="btn btn-default effect" data-effect="lowpass">
+                    <strong class="hidden-xs">0</strong> Lowpass filter
+                </button>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+
+            <h3 class="hidden-xs">Octave</h3>
+            <h4 class="visible-xs">Octave</h4>
+
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-default octave-control" data-octave-direction="up">
+                    ↑
+                </button>
+                <span class="btn btn-primary">
+                    <span id="octave">0</span>
+                </span>
+                <button type="button" class="btn btn-default octave-control" data-octave-direction="down">
+                    ↓
+                </button>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
-<script src="dist/bundle.js"></script>
+<script src="dist/bundle.js?12fas3sasa4446sfs3"></script>
 </body>
 </html>

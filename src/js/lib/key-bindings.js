@@ -1,0 +1,37 @@
+export default {
+  notes: {
+    65: 'C',
+    87: 'C#',
+    83: 'D',
+    69: 'D#',
+    68: 'E',
+    70: 'F',
+    84: 'F#',
+    71: 'G',
+    89: 'G#',
+    72: 'A',
+    85: 'A#',
+    74: 'B',
+    75: 'C+1',
+    79: 'C#+1',
+    76: 'D+1',
+    80: 'D#+1',
+    186: 'E+1',
+  },
+  octaves: {
+    38: 'up',
+    40: 'down',
+  },
+  waveShapes: {
+    49: 'sine',
+    50: 'square',
+    51: 'sawtooth',
+    52: 'triangle',
+  },
+  effects: {
+    55: 'distortion',
+    56: 'delay',
+    57: 'reverb',
+    48: 'lowpass',
+  },
+};

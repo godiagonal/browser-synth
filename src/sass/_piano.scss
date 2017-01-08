@@ -1,0 +1,122 @@
+// Inspired by https://codepen.io/JackCA/pen/JLmdi
+
+.piano {
+  margin: 50px auto;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  @media (max-width: 450px) {
+    margin: 25px auto 15px auto;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+
+    li {
+      @include box-sizing(border-box);
+      float: left;
+      position: relative;
+      border: #f8f1e5 1px solid;
+      text-align: center;
+
+      .key {
+        @include transition-property(background, box-shadow);
+        @include transition-duration(0.2s);
+        @include border-radius(3px);
+        @include box-shadow(#575757 0px 3px 3px -1px);
+        cursor: pointer;
+        background: $key-color;
+        color: $upper-key-color;
+        width: 56px;
+        height: 140px;
+        padding-top: 110px;
+        border: 1px solid $key-border;
+        font-weight: $font-weight-medium;
+
+        @media (max-width: 450px) {
+          width: 38px;
+          height: 120px;
+          padding-top: 90px;
+          color: $key-color;
+        }
+
+        &:active,
+        &.active  {
+          @include box-shadow(gray 0px 1px 3px -1px);
+          background: $key-color-active;
+          border-color: $key-border-active;
+
+          @media (max-width: 450px) {
+            color: $key-color-active;
+          }
+        }
+      }
+
+      .key.key-upper {
+        @include transition-property(background, box-shadow);
+        @include transition-duration(0.1s);
+        @include border-radius(3px);
+        @include box-shadow(black 0px 3px 3px 0px);
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        background: $upper-key-color;
+        color: $key-color;
+        width: 22.4px;
+        height: 80px;
+        padding-top: 54px;
+        border: none;
+        font-weight: $font-weight-normal;
+
+        @media (max-width: 450px) {
+          width: 24px;
+          height: 60px;
+          padding-top: 34px;
+          color: $upper-key-color;
+        }
+
+        &:active,
+        &.active {
+          @include box-shadow(black 0px 2px 2px 0px);
+          background: $upper-key-color-active;
+
+          @media (max-width: 450px) {
+            color: $upper-key-color-active;
+          }
+        }
+      }
+
+      &:nth-child(7n-6) .key.key-upper,
+      &:nth-child(7n - 3) .key.key-upper {
+        left: 43.68px;
+        display: block;
+
+        @media (max-width: 450px) {
+          left: 21.84px;
+        }
+      }
+      &:nth-child(7n-2) .key.key-upper {
+        left: 47.04px;
+        display: block;
+
+        @media (max-width: 450px) {
+          left: 23.52px;
+        }
+      }
+      &:nth-child(7n-5) .key.key-upper,
+      &:nth-child(7n-1) .key.key-upper {
+        left: 50.4px;
+        display: block;
+
+        @media (max-width: 450px) {
+          left: 25.2px;
+        }
+      }
+    }
+  }
+}

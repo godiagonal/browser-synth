@@ -5,6 +5,10 @@
   "extends": "airbnb",
   "rules": {
     "func-names": ["error", "never"],
-    "no-trailing-spaces": "off"
+    "no-trailing-spaces": "off",
+    "no-multiple-empty-lines": "off",
+    "no-plusplus": "off",
+    "no-mixed-operators": "off",
+    "radix": "off"
   }
 }

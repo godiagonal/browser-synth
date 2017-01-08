@@ -1,0 +1,24 @@
+$font-family-base:          'Roboto', sans-serif;
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-medium:        500;
+$font-weight-bold:          700;
+
+$headings-font-weight:      $font-weight-light;
+
+$brand-primary:             #576279;
+
+$btn-default-color:         #6d778a;
+$btn-default-bg:            #f9f8f7;
+$btn-default-border:        #e2e1e1;
+
+$btn-primary-color:         $btn-default-bg !default;
+$btn-primary-bg:            $brand-primary;
+$btn-primary-border:        darken($btn-primary-bg, 5%) !default;
+
+$key-border:                $btn-default-border;
+$key-border-active:         darken($key-border, 10%);
+$key-color:                 $btn-default-bg;
+$key-color-active:          darken($key-color, 10%);
+$upper-key-color:           $brand-primary;
+$upper-key-color-active:    darken($upper-key-color, 10%);

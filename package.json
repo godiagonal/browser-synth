@@ -1,5 +1,5 @@
 {
-  "name": "web-audio-synth",
+  "name": "browser-synth",
   "version": "0.0.1",
   "description": "A synthesizer in your browser!",
   "scripts": {
@@ -7,23 +7,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://godiagonal@github.com/godiagonal/web-audio-synth.git"
+    "url": "git+https://godiagonal@github.com/godiagonal/browser-synth.git"
   },
   "keywords": [
     "web",
     "audio",
-    "synth"
+    "synth",
+    "keyboard"
   ],
   "author": "Samuel Johansson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/godiagonal/web-audio-synth/issues"
+    "url": "https://github.com/godiagonal/browser-synth/issues"
   },
-  "homepage": "https://github.com/godiagonal/web-audio-synth#readme",
+  "homepage": "https://github.com/godiagonal/browser-synth#readme",
   "dependencies": {
     "jquery": "^3.1.1",
     "octavian": "^2.2.0",
-    "soundbank-reverb": "^1.1.2",
+    "soundbank-reverb": "^1.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
-
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-
 @import '_piano.scss';
-@import '_controls.scss';
 
 body {
   background-color: #f1f1f1;
@@ -22,6 +18,19 @@ strong {
 
   @media (min-width: 768px) {
     padding-top: 50px;
+  }
+}
+
+.github {
+  display: block;
+  margin-top: 30px;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+
+  img {
+    margin-right: 10px;
   }
 }
 

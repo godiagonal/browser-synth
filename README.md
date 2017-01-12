@@ -1,5 +1,5 @@
 # Browser Synth
-A simple synthesizer created using the Web Audio API.
+A simple synthesizer created using the Web Audio API. All sounds are created using programmed oscillators - no samples used!
 
 Live site: http://godiagonal.com/synth/
 
